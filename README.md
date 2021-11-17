@@ -1,6 +1,4 @@
-<center><font size=10>CryoFall-SAS</font></center>
-
-## CryoFall 末日觉醒 一键安装&启动脚本
+## CryoFall-SAS CryoFall 末日觉醒 一键安装&启动脚本
 
 有任何bug和疑问请提交issues
 
@@ -10,13 +8,17 @@
 
 使用前请确定拥有root账号或者root权限
 
-不推荐使用大陆服务器，如需使用大陆服务器建议注释掉cryofall_setup中`wget https://atomictorch.com/Files/CryoFall_Server_v1.31.8.1.zip `然后手动下载[官方链接](https://atomictorch.com/Files/CryoFall_Server_v1.31.8.1.zip)（美国节点）并将压缩包保存到home文件夹（最新版本请查看[官方wiki](https://wiki.atomictorch.com/CryoFall/Server/Setup)）
+**不推荐使用大陆服务器**
 
-文件在Windows编辑过 可能会存在无法运行的问题
+**如需使用大陆服务器建议注释掉cryofall_setup中`wget https://atomictorch.com/Files/CryoFall_Server_v1.31.8.1.zip `**
+
+**然后手动下载[官方链接](https://atomictorch.com/Files/CryoFall_Server_v1.31.8.1.zip)（美国节点）并将压缩包保存到home文件夹（最新版本请查看[官方wiki](https://wiki.atomictorch.com/CryoFall/Server/Setup)）**
+
+**文件在Windows编辑过 可能会存在无法运行的问题**
 
 可尝试使用下面的方法修复：
 
-在脚本所在目录（可以是根目录）
+**在脚本所在目录（可以是根目录）**
 
 ```
 sed -i 's/\r$//' cryofall_*
@@ -25,13 +27,13 @@ cryofall_setup->一键安装&初次运行脚本<br>
 cryofall_first_or_reset->一键重置脚本<br>
 cryofall_start->重启服务器或结束掉screen后的一键启动脚本<br>
 
-<font color=red>**注：不能且不应该在停止游戏进程却没有停止该screen时使用该脚本**<br>
+**注：不能且不应该在停止游戏进程却没有停止该screen时使用该脚本**<br>
 
 **而是使用`dotnet CryoFall_Server.dll load`加载存档**<br>
 
 **或者使用`dotnet CryoFall_Server.dll new`重置存档**<br>
 
-**在初次启动服务器生成配置文件和存档后需要修改配置文件**，具体参考[官方wiki（English）](https://wiki.atomictorch.com/CryoFall/Server/Setup)</font>
+**在初次启动服务器生成配置文件和存档后需要修改配置文件**，具体参考[官方wiki（English）](https://wiki.atomictorch.com/CryoFall/Server/Setup)
 
 #### How to setup your own server (on any OS):
 
