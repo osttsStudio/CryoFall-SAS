@@ -1,0 +1,9 @@
+#!/bin/bash
+screen_cryofall=$"cryofall"
+cmd=$"dotnet CryoFall_Server.dll new"
+cd /home/CryoFall_Server_v1.31.8.1/Binaries/Server
+screen -dmS $screen_cryofall
+screen -x -S $screen_cryofall -p 0 -X stuff "$cmd"
+screen -x -S $screen_cryofall -p 0 -X stuff $'\n'
+screen -x -S $screen_cryofall -p 0 -X stuff $'exit'
+screen -r -s $screen_cryofall
